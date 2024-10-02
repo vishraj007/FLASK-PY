@@ -1,0 +1,22 @@
+# .replit file for running Python programs
+
+# Specifying the language/environment
+language = "python"
+
+# The version of Python you want to use
+modules = ["python-3.12"]
+
+# How to run the code
+run = "python3 app.py"
+
+[nix]
+# Using stable nix channel
+channel = "stable-24_05"
+
+[deployment]
+# Run the Python program when deployed
+run = ["python3", "app.py"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
